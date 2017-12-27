@@ -15,14 +15,11 @@ typedef enum {
     NoneModel
 }GestureModel;
 
-
 typedef void (^PasswordBlock) (NSString *pswString);
 
-
 @interface AliPayViews : UIView
+
 @property(nonatomic , assign)GestureModel gestureModel;
 @property(nonatomic , strong)PasswordBlock block;
-
-
 
 @end

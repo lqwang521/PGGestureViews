@@ -91,19 +91,19 @@
 
 + (NSString *)objectForKey:(id)key
 {
-    return [self objectForKey:key service:HTMI_KEYCHAIN_SERVICE];
+    NSString * valueString = [self objectForKey:key service:HTMI_KEYCHAIN_SERVICE];
+    return valueString;
 }
 
 + (NSString *)objectForKey:(id)key service:(NSString *)service
 {
-    NSError * error = nil;
     NSString *stringValue = [SAMKeychain passwordForService:service account:key];
     return stringValue;
 }
 
 + (void)removeObjectForKey:(id)key
 {
-    [SAMKeychain deletePasswordForService:key account:HTMI_KEYCHAIN_SERVICE];
+    [SAMKeychain deletePasswordForService:HTMI_KEYCHAIN_SERVICE account:key];
 }
 
 @end

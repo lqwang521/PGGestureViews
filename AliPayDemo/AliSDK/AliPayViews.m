@@ -18,48 +18,16 @@
 #define ITEMTAG 122
 
 @interface AliPayViews()
+
 @property(nonatomic , strong)NSMutableArray *btnArray;
 @property(nonatomic , assign)CGPoint movePoint;
 @property(nonatomic , strong)AlipaySubItem *subItemsss;
 @property(nonatomic , strong)UILabel *tfLabel;
 @property(nonatomic , assign)CGPoint lastPoint;
+
 @end
 
-
-
 @implementation AliPayViews
-
-- (NSMutableArray *)btnArray
-{
-    if (_btnArray==nil) {
-        _btnArray = [NSMutableArray array];
-    }
-    return _btnArray;
-}
-
-- (UILabel *)tfLabel
-{
-    if (_tfLabel==nil) {
-        _tfLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.subItemsss.frame.origin.y+50, KscreenWidth , 40)];
-        _tfLabel.textAlignment = NSTextAlignmentCenter;
-        _tfLabel.textColor = [UIColor whiteColor];
-        _tfLabel.text = SETPSWSTRING;
-        [self addSubview:_tfLabel];
-    }
-    return _tfLabel;
-}
-
-
-- (AlipaySubItem *)subItemsss
-{
-    if (_subItemsss==nil) {
-        _subItemsss = [[AlipaySubItem alloc] initWithFrame:CGRectMake((self.frame.size.width-SUBITEMTOTALWH)/2, SUBITEM_TOP, SUBITEMTOTALWH, SUBITEMTOTALWH)];
-        [self addSubview:_subItemsss];
-    }
-    return _subItemsss;
-}
-
-
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -93,11 +61,6 @@
     _lastPoint = CGPointMake(0, 0);
 }
 
-
-
-
-
-
 #pragma mark - Touch Event
 /**
  *  begin
@@ -109,9 +72,7 @@
     CGPoint point = [self touchLocation:touches];
     
     [self isContainItem:point];
-    
 }
-
 
 /**
  *  touch Move
@@ -127,9 +88,7 @@
     [self touchMove_triangleAction];
     
     [self setNeedsDisplay];
-
 }
-
 
 /**
  *  touch End
@@ -141,11 +100,7 @@
     [self touchEndAction];
     
     [self setNeedsDisplay];
-    
-
 }
-
-
 
 #pragma mark - UILabel  property
 - (void)shake:(UIView *)myView
@@ -167,10 +122,6 @@
     [lbl addAnimation:animation forKey:nil];
     
 }
-
-
-
-
 
 - (void)setGestureModel:(GestureModel)gestureModel
 {
@@ -204,10 +155,6 @@
     }
 }
 
-
-
-
-
 #pragma mark - total method
 
 /**
@@ -215,8 +162,7 @@
  */
 - (void)createPoint_nine
 {
-    
-    for (int i=0; i<9; i++)
+    for (int i = 0; i < 9; i++)
     {
         int row    = i / 3;
         int column = i % 3;
@@ -228,14 +174,12 @@
         /**
          *  对每一个item的frame的布局
          */
-        AliPayItem *item = [[AliPayItem alloc] initWithFrame:CGRectMake( pointX  , pointY , ITEMWH, ITEMWH)];
+        AliPayItem *item = [[AliPayItem alloc] initWithFrame:CGRectMake(pointX,pointY,ITEMWH,ITEMWH)];
         item.userInteractionEnabled = YES;
         item.backgroundColor = [UIColor clearColor];
         item.isSelect = NO;
         item.tag = ITEMTAG + i ;
         [self addSubview:item];
-        
-        //NSLog(@"item.frame = [%@]", NSStringFromCGPoint(item.center));
     }
 }
 
@@ -266,18 +210,16 @@
                 item.model = selectStyle;
             }
         }
-        
     }
-    
 }
 
 - (void)touchMove_triangleAction
 {
     NSString *resultStr = [self getResultPwd];
-    if (resultStr&&resultStr.length>0   )
+    if (resultStr && resultStr.length > 0)
     {
         NSArray *resultArr = [resultStr componentsSeparatedByString:@"A"];
-        if ([resultArr isKindOfClass:[NSArray class]]  &&  resultArr.count>2 )
+        if ([resultArr isKindOfClass:[NSArray class]] && resultArr.count > 2)
         {
             NSString *lastTag    = resultArr[resultArr.count-1];
             NSString *lastTwoTag = resultArr[resultArr.count-2];
@@ -306,9 +248,6 @@
                 [lastItem judegeDirectionActionx1:x1 y1:y1 x2:x2 y2:y2 isHidden:NO];
 
             }
-            
-            
-            
         }
     }
 }
@@ -341,12 +280,8 @@
             item.model = normalStyle;
             [item judegeDirectionActionx1:0 y1:0 x2:0 y2:0 isHidden:YES];
         }
-        
     }
-    
 }
-
-
 
 /**
  *  少于4个点
@@ -383,9 +318,6 @@
     return (NSString *)resultStr;
 }
 
-
-
-
 #pragma mark - 处理修改，设置，登录的业务逻辑
 - (void)setPswMethod:(NSString *)resultStr
 {
@@ -415,15 +347,11 @@
         
         //验证密码
         color = [self validatePwdJudgeAction:color str:resultStr];
-        
     }
     
     /**************  小键盘颜色 ***************/
     [self.subItemsss resultArr:(NSArray *)[resultStr componentsSeparatedByString:@"A"] fillColor:color];
-    
 }
-
-
 
 /**
  *  设置密码
@@ -526,12 +454,6 @@
     }
 }
 
-
-
-
-
-
-
 #pragma mark - drawRect
 - (void)drawRect:(CGRect)rect
 {
@@ -559,13 +481,38 @@
     [path setLineWidth:1.0f];
     [SELECTCOLOR setStroke];
     [path stroke];
-    
-    
 }
 
+#pragma mark - getter and setter
 
+- (NSMutableArray *)btnArray
+{
+    if (_btnArray==nil) {
+        _btnArray = [NSMutableArray array];
+    }
+    return _btnArray;
+}
 
+- (UILabel *)tfLabel
+{
+    if (_tfLabel==nil) {
+        _tfLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.subItemsss.frame.origin.y+50, KscreenWidth , 40)];
+        _tfLabel.textAlignment = NSTextAlignmentCenter;
+        _tfLabel.textColor = [UIColor whiteColor];
+        _tfLabel.text = SETPSWSTRING;
+        [self addSubview:_tfLabel];
+    }
+    return _tfLabel;
+}
 
+- (AlipaySubItem *)subItemsss
+{
+    if (_subItemsss==nil) {
+        _subItemsss = [[AlipaySubItem alloc] initWithFrame:CGRectMake((self.frame.size.width-SUBITEMTOTALWH)/2, SUBITEM_TOP, SUBITEMTOTALWH, SUBITEMTOTALWH)];
+        [self addSubview:_subItemsss];
+    }
+    return _subItemsss;
+}
 
 
 @end

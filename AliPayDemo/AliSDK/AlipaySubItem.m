@@ -17,9 +17,6 @@
 
 @implementation AlipaySubItem
 
-
-
-
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -28,7 +25,6 @@
     }
     return self;
 }
-
 
 - (void)initViews
 {
@@ -49,9 +45,6 @@
         [self drawCircle:myView color:[UIColor clearColor]];
     }
 }
-
-
-
 
 - (void)drawCircle:(UIView *)myView color:(UIColor *)color
 {
@@ -84,11 +77,6 @@
     shape.path = path.CGPath;
 }
 
-
-
-
-
-
 - (void)resultArr:(NSArray *)array fillColor:(UIColor *)color
 {
     [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -106,23 +94,9 @@
     }];
 }
 
-
-
-
 - (void)drawCleanCircle:(UIView *)myView
 {
     [self drawCircle:myView color:[UIColor clearColor]];
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @end
