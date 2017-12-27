@@ -1,49 +1,19 @@
 //
-//  KeychainData.m
+//  HTMIKeychainTool.m
 //  AliPayDemo
 //
-//  Created by pg on 15/7/15.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/15.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
-#import "KeychainData.h"
-#import "KeychainItemWrapper.h"
+#import "HTMIKeychainTool.h"
 
-
+#import <SAMKeychain/SAMKeychain.h>
 
 #define KEYCHAIN_KEY  @"password_slider"
+#define HTMI_KEYCHAIN_ACCOUNT  @"htmitech"
 
-@implementation KeychainData
-
-
-+ (void)setObject:(id)object forKey:(id)key
-{
-    KeychainItemWrapper *keyChain = [[KeychainItemWrapper alloc] initWithIdentifier:[NSString stringWithFormat:@"a%@&&a", key] accessGroup:nil];
-    [keyChain setObject:object forKey:(__bridge id)kSecAttrAccount];// 上面两行用来标识一个Item
-    
-    /**
-     
-     forKey:(id)kSecAttrAccount];  
-     forKey:(id)kSecValueData];
-     
-     
-     */
-    
-}
-
-+ (id)objectForKey:(id)key
-{
-    KeychainItemWrapper *keyChain = [[KeychainItemWrapper alloc] initWithIdentifier:[NSString stringWithFormat:@"a%@&&a", key] accessGroup:nil];
-    id a = [keyChain objectForKey:(__bridge id)kSecAttrAccount];
-    return a;
-}
-
-+ (void)removeObjectForKey:(id)key
-{
-    KeychainItemWrapper *keyChain = [[KeychainItemWrapper alloc] initWithIdentifier:[NSString stringWithFormat:@"a%@&&a", key] accessGroup:nil];
-    [keyChain resetKeychainItem];
-}
-
+@implementation HTMIKeychainTool
 
 #pragma mark --------------------------
 
@@ -57,7 +27,6 @@
     return NO;
 }
 
-
 + (BOOL)isFirstInput:(NSString *)str
 {
     NSString *oldStr = [self objectForKey:KEYCHAIN_KEY];
@@ -70,8 +39,6 @@
     
     return YES;
 }
-
-
 
 + (BOOL)isSecondInputRight:(NSString *)str
 {
@@ -90,24 +57,42 @@
     return NO;
 }
 
+#pragma mark - Private
 
 + (void)forgotPsw
 {
     [self removeObjectForKey:KEYCHAIN_KEY];
 }
 
-
 + (void)setPSW:(NSString *)str
 {
     [self setObject:str forKey:KEYCHAIN_KEY];
 }
 
++ (void)setObject:(id)object forKey:(id)key
+{
+    [self setObject:object forKey:key account:HTMI_KEYCHAIN_ACCOUNT];
+}
 
++ (void)setObject:(id)object forKey:(id)key account:(NSString *)account
+{
+    [SAMKeychain setPassword:object forService:key account:account];
+}
 
++ (NSString *)objectForKey:(id)key
+{
+    return [self objectForKey:key account:HTMI_KEYCHAIN_ACCOUNT];
+}
 
++ (NSString *)objectForKey:(id)key account:(NSString *)account
+{
+    NSString *stringValue = [SAMKeychain passwordForService:key account:account];
+    return stringValue;
+}
 
-
-
-
++ (void)removeObjectForKey:(id)key
+{
+    [SAMKeychain deletePasswordForService:key account:HTMI_KEYCHAIN_ACCOUNT];
+}
 
 @end

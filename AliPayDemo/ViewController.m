@@ -2,16 +2,16 @@
 //  ViewController.m
 //  AliPayDemo
 //
-//  Created by pg on 15/7/8.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/8.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
 #import "ViewController.h"
 
 #import "AliPayViews.h"
-#import "KeychainData.h"
+#import "HTMIKeychainTool.h"
 
-#import "SetpasswordViewController.h"
+#import "HTMIGesturePasswordViewController.h"
 #import "MBProgressHUD.h"
 
 
@@ -29,27 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
-//    AliPayView *aliView = [[AliPayView alloc] initWithFrame:self.view.frame];
-//    
-//    [self.view addSubview:aliView];
-    
-    
-    
-//    
-//    AliPayViews *alipay = [[AliPayViews alloc] initWithFrame:self.view.bounds];
-// 
-//    alipay.block = ^(NSMutableArray *pwdArr)
-//    {
-//        NSLog(@"\n\n你的密码为 = 【%@】\n\n", pwdArr);
-//    };
-//    
-////    [self.view addSubview:alipay];
-//    
-    
-    
     
     UIButton *oneButton = [UIButton buttonWithType:UIButtonTypeCustom];
     oneButton.frame = CGRectMake(0, 70, 320, 50);
@@ -98,7 +77,7 @@
 - (void)setPassword
 {
     [self forgotPassword];
-    SetpasswordViewController *setpass = [[SetpasswordViewController alloc] init];
+    HTMIGesturePasswordViewController *setpass = [[HTMIGesturePasswordViewController alloc] init];
     setpass.string = @"重置密码";
     [self presentViewController:setpass animated:YES completion:nil];
 }
@@ -108,7 +87,7 @@
  */
 - (void)forgotPassword
 {
-    [KeychainData forgotPsw];
+    [HTMIKeychainTool forgotPsw];
     [self hudAction:@"忘记密码"];
 }
 /**
@@ -116,9 +95,9 @@
  */
 - (void)alertPassword
 {
-    BOOL isSave = [KeychainData isSave]; //是否有保存
+    BOOL isSave = [HTMIKeychainTool isSave]; //是否有保存
     if (isSave) {
-        SetpasswordViewController *setpass = [[SetpasswordViewController alloc] init];
+        HTMIGesturePasswordViewController *setpass = [[HTMIGesturePasswordViewController alloc] init];
         setpass.string = @"修改密码";
         [self presentViewController:setpass animated:YES completion:nil];
     } else {
@@ -130,10 +109,10 @@
  */
 - (void)validatePassword
 {
-    BOOL isSave = [KeychainData isSave]; //是否有保存
+    BOOL isSave = [HTMIKeychainTool isSave]; //是否有保存
     if (isSave) {
         
-        SetpasswordViewController *setpass = [[SetpasswordViewController alloc] init];
+        HTMIGesturePasswordViewController *setpass = [[HTMIGesturePasswordViewController alloc] init];
         setpass.string = @"验证密码";
         [self presentViewController:setpass animated:YES completion:nil];
         

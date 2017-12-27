@@ -2,8 +2,8 @@
 //  AliPayViews.h
 //  AliPayDemo
 //
-//  Created by pg on 15/7/9.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/9.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

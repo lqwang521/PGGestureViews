@@ -1,26 +1,24 @@
 //
-//  SetpasswordViewController.m
+//  HTMIGesturePasswordViewController.m
 //  AliPayDemo
 //
-//  Created by pg on 15/7/15.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/15.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
-#import "SetpasswordViewController.h"
+#import "HTMIGesturePasswordViewController.h"
 #import "AliPayViews.h"
-#import "KeychainData.h"
+#import "HTMIKeychainTool.h"
 
-@interface SetpasswordViewController ()
+@interface HTMIGesturePasswordViewController ()
 
 @end
 
-@implementation SetpasswordViewController
+@implementation HTMIGesturePasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
+ 
     /************************* start **********************************/
     
     
@@ -42,39 +40,17 @@
     
     [self.view addSubview:alipay];
     
-    
     /************************* end **********************************/
 
-    
-    
-    
-    
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 64, 64);
     [backBtn setTitle:@"返回" forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backBtn];
-    
-    
-    
-    
-    
-    
-    
 }
 
 - (void)back  {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

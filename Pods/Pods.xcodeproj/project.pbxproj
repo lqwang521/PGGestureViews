@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0465F2AA3C580BF12E4ECB475E1AEA54 /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B193CCC992ED8DC9204C02D785AAB72 /* Pods-AliPayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		156C4A85B22254DC4ABAEDE972489485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		315BFDF38ED1D90AA710806CA3BDDC5B /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */; };
+		3919BC13200534A6DDD241931D30B1BD /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */; };
+		521FDA755FF723FCA1A04EBACE3C5C90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		59F3A66176AA9F27E287CFB43BA44C4B /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B5DFD47398B801B6F646B6BD316DC2 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ADC262974A375023809D133390564397 /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DA979AFE7A692C19D1E37E8E58A807 /* Pods-AliPayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */; };
+		E8670A4691960ED76D8BFCE2CA4C7D44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		EE8BC97F82A5297245CA03BA51413298 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA64EC5A3EB6C84ADD63E4341DE0A3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310FEBA9077FBBFBBD63418F19CBD989;
+			remoteInfo = SAMKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
+		1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychain.h; path = Sources/SAMKeychain.h; sourceTree = "<group>"; };
+		2243E044C5482C15ED57A35A13993C24 /* Pods-AliPayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AliPayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A23B83748BF7D5372B1A63CBF08A1A8 /* Pods-AliPayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AliPayDemo-frameworks.sh"; sourceTree = "<group>"; };
+		40A95F3AF0221457E7930C850D80912D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychainQuery.m; path = Sources/SAMKeychainQuery.m; sourceTree = "<group>"; };
+		4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
+		4D7B92B1DA5F8CD40DC3DA704F3B6A8E /* SAMKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-prefix.pch"; sourceTree = "<group>"; };
+		4FB5D001C2A6D6C4618B23F73EEEB562 /* Pods-AliPayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AliPayDemo.modulemap"; sourceTree = "<group>"; };
+		5A6DB8E2A50D787E625E8C36CAAA5CFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBBEAAFE15AF367A9C92BD3FFBE0B34 /* Pods-AliPayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AliPayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain.framework; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AliPayDemo-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A11AB5BFF40CE909B60B8904D930D133 /* SAMKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SAMKeychain.modulemap; sourceTree = "<group>"; };
+		A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychain.m; path = Sources/SAMKeychain.m; sourceTree = "<group>"; };
+		B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-umbrella.h"; sourceTree = "<group>"; };
+		BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.xcconfig; sourceTree = "<group>"; };
+		BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AliPayDemo-umbrella.h"; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D347A985CF006AFADADC148B650A803B /* Pods-AliPayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AliPayDemo-resources.sh"; sourceTree = "<group>"; };
+		D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SAMKeychain.bundle; path = Support/SAMKeychain.bundle; sourceTree = "<group>"; };
+		E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AliPayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AliPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AliPayDemo.framework; path = "Pods-AliPayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4F57FBCCD68B6444B34C8BC0E3F4901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521FDA755FF723FCA1A04EBACE3C5C90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EA28C16C36B4870969F69F2C77E7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156C4A85B22254DC4ABAEDE972489485 /* Foundation.framework in Frameworks */,
+				E8670A4691960ED76D8BFCE2CA4C7D44 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FEE6DBAC6779899A1B713A4C015471C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A95F3AF0221457E7930C850D80912D /* Info.plist */,
+				A11AB5BFF40CE909B60B8904D930D133 /* SAMKeychain.modulemap */,
+				BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */,
+				12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */,
+				4D7B92B1DA5F8CD40DC3DA704F3B6A8E /* SAMKeychain-prefix.pch */,
+				B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAMKeychain";
+			sourceTree = "<group>";
+		};
+		3404228A30E1AF44212A2DB3C9EDEA1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */,
+				7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C3D5CE1AF552E68D74B490FEA85FD6E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDFF63AAB94E5B24D9D082A267D941 /* Pods-AliPayDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				BF4BDEF7DEC1C21CD808737A4ACDE8FB /* Pods */,
+				3404228A30E1AF44212A2DB3C9EDEA1A /* Products */,
+				3C3D5CE1AF552E68D74B490FEA85FD6E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BF4BDEF7DEC1C21CD808737A4ACDE8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F96D79477F61AD45B0303034737A3AB4 /* SAMKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C193794E7F23D7B6C851A0A37A62B25D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CBBDFF63AAB94E5B24D9D082A267D941 /* Pods-AliPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5A6DB8E2A50D787E625E8C36CAAA5CFF /* Info.plist */,
+				4FB5D001C2A6D6C4618B23F73EEEB562 /* Pods-AliPayDemo.modulemap */,
+				6BBBEAAFE15AF367A9C92BD3FFBE0B34 /* Pods-AliPayDemo-acknowledgements.markdown */,
+				2243E044C5482C15ED57A35A13993C24 /* Pods-AliPayDemo-acknowledgements.plist */,
+				8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */,
+				3A23B83748BF7D5372B1A63CBF08A1A8 /* Pods-AliPayDemo-frameworks.sh */,
+				D347A985CF006AFADADC148B650A803B /* Pods-AliPayDemo-resources.sh */,
+				BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */,
+				E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */,
+				E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */,
+			);
+			name = "Pods-AliPayDemo";
+			path = "Target Support Files/Pods-AliPayDemo";
+			sourceTree = "<group>";
+		};
+		F96D79477F61AD45B0303034737A3AB4 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */,
+				A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */,
+				4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */,
+				467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */,
+				C193794E7F23D7B6C851A0A37A62B25D /* Resources */,
+				1FEE6DBAC6779899A1B713A4C015471C /* Support Files */,
+			);
+			name = SAMKeychain;
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1744B4D07926CA3724C31CDEE42A9273 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B193CCC992ED8DC9204C02D785AAB72 /* Pods-AliPayDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336B8119FC1531894C45364DDE426E22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0465F2AA3C580BF12E4ECB475E1AEA54 /* SAMKeychain-umbrella.h in Headers */,
+				ADC262974A375023809D133390564397 /* SAMKeychain.h in Headers */,
+				59F3A66176AA9F27E287CFB43BA44C4B /* SAMKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C78A2A919B892B2E28A609DC3D63FDAD /* Build configuration list for PBXNativeTarget "SAMKeychain" */;
+			buildPhases = (
+				2B3233D300191957C5A4C1A0A95278E5 /* Sources */,
+				F6EA28C16C36B4870969F69F2C77E7E5 /* Frameworks */,
+				336B8119FC1531894C45364DDE426E22 /* Headers */,
+				BC32A482E0DF9D58DF8699BD996F96A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMKeychain;
+			productName = SAMKeychain;
+			productReference = 7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B22DC9DF531E72D607FD64BD4B182F83 /* Pods-AliPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C9E37F93C6E46D67564B0FB2F54601 /* Build configuration list for PBXNativeTarget "Pods-AliPayDemo" */;
+			buildPhases = (
+				3112C3CC440CDA92E28444D9F0DAAAC0 /* Sources */,
+				D4F57FBCCD68B6444B34C8BC0E3F4901 /* Frameworks */,
+				1744B4D07926CA3724C31CDEE42A9273 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24B5DC461668BAE73333436C131CE7B /* PBXTargetDependency */,
+			);
+			name = "Pods-AliPayDemo";
+			productName = "Pods-AliPayDemo";
+			productReference = E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3404228A30E1AF44212A2DB3C9EDEA1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B22DC9DF531E72D607FD64BD4B182F83 /* Pods-AliPayDemo */,
+				310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC32A482E0DF9D58DF8699BD996F96A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3919BC13200534A6DDD241931D30B1BD /* SAMKeychain.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B3233D300191957C5A4C1A0A95278E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315BFDF38ED1D90AA710806CA3BDDC5B /* SAMKeychain-dummy.m in Sources */,
+				EE8BC97F82A5297245CA03BA51413298 /* SAMKeychain.m in Sources */,
+				73B5DFD47398B801B6F646B6BD316DC2 /* SAMKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112C3CC440CDA92E28444D9F0DAAAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4DA979AFE7A692C19D1E37E8E58A807 /* Pods-AliPayDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F24B5DC461668BAE73333436C131CE7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = 310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */;
+			targetProxy = EA64EC5A3EB6C84ADD63E4341DE0A3B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15ECF07790784A86B552F262DEB27FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		490195040970178F8A4F5D7923BCEFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AliPayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AliPayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F8B140C67E302BE7C1191D2E02716A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AliPayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AliPayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A44D09AF097C2F603B36C6FBA56A426C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C9E37F93C6E46D67564B0FB2F54601 /* Build configuration list for PBXNativeTarget "Pods-AliPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8B140C67E302BE7C1191D2E02716A0 /* Debug */,
+				490195040970178F8A4F5D7923BCEFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C78A2A919B892B2E28A609DC3D63FDAD /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44D09AF097C2F603B36C6FBA56A426C /* Debug */,
+				15ECF07790784A86B552F262DEB27FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

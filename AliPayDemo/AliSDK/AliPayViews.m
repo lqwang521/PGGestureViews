@@ -2,14 +2,14 @@
 //  AliPayViews.m
 //  AliPayDemo
 //
-//  Created by pg on 15/7/9.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/9.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
 #import "AliPayViews.h"
 #import "AliPayItem.h"
 #import "Header.h"
-#import "KeychainData.h"
+#import "HTMIKeychainTool.h"
 #import "AlipaySubItem.h"
 
 #define KscreenHeight [UIScreen mainScreen].bounds.size.height
@@ -196,7 +196,7 @@
             
         case DeletePwdModel:
             //删除密码
-            [KeychainData forgotPsw];
+            [HTMIKeychainTool forgotPsw];
             break;
             
         default:
@@ -390,7 +390,7 @@
 - (void)setPswMethod:(NSString *)resultStr
 {
     //没有任何记录，第一次登录
-    BOOL isSaveBool = [KeychainData isFirstInput:resultStr];
+    BOOL isSaveBool = [HTMIKeychainTool isFirstInput:resultStr];
     
     //默认为蓝色
     UIColor *color = SELECTCOLOR;
@@ -436,7 +436,7 @@
     if (self.gestureModel == SetPwdModel) {
         
         // isRight == YES 2次的密码相同
-        BOOL isRight = [KeychainData isSecondInputRight:resultStr];
+        BOOL isRight = [HTMIKeychainTool isSecondInputRight:resultStr];
         if (isRight) {
             // 验证成功
             
@@ -466,11 +466,11 @@
      */
     if (self.gestureModel == AlertPwdModel)
     {
-        BOOL isValidate = [KeychainData isSecondInputRight:resultStr];
+        BOOL isValidate = [HTMIKeychainTool isSecondInputRight:resultStr];
         if (isValidate) {
             
             //如果验证成功
-            [KeychainData forgotPsw];
+            [HTMIKeychainTool forgotPsw];
             self.tfLabel.text = INPUT_NEW_PSWSTRING;
             self.tfLabel.textColor = [UIColor whiteColor];
             _gestureModel = SetPwdModel;
@@ -494,7 +494,7 @@
     
     
     if (self.gestureModel == ValidatePwdModel) {
-        BOOL isValidate = [KeychainData isSecondInputRight:resultStr];
+        BOOL isValidate = [HTMIKeychainTool isSecondInputRight:resultStr];
         if (isValidate) {
             //如果验证成功
             self.tfLabel.text = VALIDATE_PSWSTRING_SUCCESS;

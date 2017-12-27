@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EDDC1AC09B39E3F446ADAE0 /* Pods_AliPayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365DDE954C76DAF3255A4AE4 /* Pods_AliPayDemo.framework */; };
 		DA576F991B5C96BF0010BD97 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA576F981B5C96BF0010BD97 /* MBProgressHUD.m */; };
 		DA6CD42D1B4F712B00C0B22E /* AliPayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CD42C1B4F712B00C0B22E /* AliPayItem.m */; };
 		DAB6A6561B550CA90080C483 /* AlipaySubItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6A6551B550CA90080C483 /* AlipaySubItem.m */; };
@@ -17,9 +18,8 @@
 		DAB724911B4D11AD00E78655 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB724901B4D11AD00E78655 /* Images.xcassets */; };
 		DAB724941B4D11AD00E78655 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB724921B4D11AD00E78655 /* LaunchScreen.xib */; };
 		DAB724A01B4D11AD00E78655 /* AliPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7249F1B4D11AD00E78655 /* AliPayDemoTests.m */; };
-		DAB784021B565CB100DBB327 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB783FF1B565CB100DBB327 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DAB784061B565CD700DBB327 /* KeychainData.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB784051B565CD700DBB327 /* KeychainData.m */; };
-		DAB784091B56714000DBB327 /* SetpasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB784081B56714000DBB327 /* SetpasswordViewController.m */; };
+		DAB784061B565CD700DBB327 /* HTMIKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB784051B565CD700DBB327 /* HTMIKeychainTool.m */; };
+		DAB784091B56714000DBB327 /* HTMIGesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB784081B56714000DBB327 /* HTMIGesturePasswordViewController.m */; };
 		DABA83581B4E7A310039A83D /* AliPayViews.m in Sources */ = {isa = PBXBuildFile; fileRef = DABA83571B4E7A310039A83D /* AliPayViews.m */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07FDC6201C6BB379F43EC937 /* Pods-AliPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		365DDE954C76DAF3255A4AE4 /* Pods_AliPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E13A1FA0FCAC5E621178464 /* Pods-AliPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA576F971B5C96BF0010BD97 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		DA576F981B5C96BF0010BD97 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		DA6CD42B1B4F712B00C0B22E /* AliPayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayItem.h; sourceTree = "<group>"; };
@@ -54,12 +57,10 @@
 		DAB724991B4D11AD00E78655 /* AliPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB7249E1B4D11AD00E78655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB7249F1B4D11AD00E78655 /* AliPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayDemoTests.m; sourceTree = "<group>"; };
-		DAB783FE1B565CB100DBB327 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		DAB783FF1B565CB100DBB327 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
-		DAB784041B565CD700DBB327 /* KeychainData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainData.h; sourceTree = "<group>"; };
-		DAB784051B565CD700DBB327 /* KeychainData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainData.m; sourceTree = "<group>"; };
-		DAB784071B56714000DBB327 /* SetpasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetpasswordViewController.h; sourceTree = "<group>"; };
-		DAB784081B56714000DBB327 /* SetpasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetpasswordViewController.m; sourceTree = "<group>"; };
+		DAB784041B565CD700DBB327 /* HTMIKeychainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIKeychainTool.h; sourceTree = "<group>"; };
+		DAB784051B565CD700DBB327 /* HTMIKeychainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIKeychainTool.m; sourceTree = "<group>"; };
+		DAB784071B56714000DBB327 /* HTMIGesturePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIGesturePasswordViewController.h; sourceTree = "<group>"; };
+		DAB784081B56714000DBB327 /* HTMIGesturePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIGesturePasswordViewController.m; sourceTree = "<group>"; };
 		DABA83561B4E7A310039A83D /* AliPayViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayViews.h; sourceTree = "<group>"; };
 		DABA83571B4E7A310039A83D /* AliPayViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayViews.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDDC1AC09B39E3F446ADAE0 /* Pods_AliPayDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192AAA0544AD80ED9B22523B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365DDE954C76DAF3255A4AE4 /* Pods_AliPayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1964AA622679E3236E9034C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07FDC6201C6BB379F43EC937 /* Pods-AliPayDemo.debug.xcconfig */,
+				4E13A1FA0FCAC5E621178464 /* Pods-AliPayDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA6CD42A1B4F640900C0B22E /* AliSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +110,8 @@
 				DA6CD42C1B4F712B00C0B22E /* AliPayItem.m */,
 				DAB6A6541B550CA90080C483 /* AlipaySubItem.h */,
 				DAB6A6551B550CA90080C483 /* AlipaySubItem.m */,
-				DAB783FE1B565CB100DBB327 /* KeychainItemWrapper.h */,
-				DAB783FF1B565CB100DBB327 /* KeychainItemWrapper.m */,
-				DAB784041B565CD700DBB327 /* KeychainData.h */,
-				DAB784051B565CD700DBB327 /* KeychainData.m */,
+				DAB784041B565CD700DBB327 /* HTMIKeychainTool.h */,
+				DAB784051B565CD700DBB327 /* HTMIKeychainTool.m */,
 				DA6CD42E1B4F768C00C0B22E /* Header.h */,
 			);
 			path = AliSDK;
@@ -106,6 +123,8 @@
 				DAB724821B4D11AD00E78655 /* AliPayDemo */,
 				DAB7249C1B4D11AD00E78655 /* AliPayDemoTests */,
 				DAB724811B4D11AD00E78655 /* Products */,
+				1964AA622679E3236E9034C7 /* Pods */,
+				192AAA0544AD80ED9B22523B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +144,8 @@
 				DAB724881B4D11AD00E78655 /* AppDelegate.m */,
 				DAB7248A1B4D11AD00E78655 /* ViewController.h */,
 				DAB7248B1B4D11AD00E78655 /* ViewController.m */,
-				DAB784071B56714000DBB327 /* SetpasswordViewController.h */,
-				DAB784081B56714000DBB327 /* SetpasswordViewController.m */,
+				DAB784071B56714000DBB327 /* HTMIGesturePasswordViewController.h */,
+				DAB784081B56714000DBB327 /* HTMIGesturePasswordViewController.m */,
 				DA576F971B5C96BF0010BD97 /* MBProgressHUD.h */,
 				DA576F981B5C96BF0010BD97 /* MBProgressHUD.m */,
 				DA6CD42A1B4F640900C0B22E /* AliSDK */,
@@ -171,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAB724A31B4D11AD00E78655 /* Build configuration list for PBXNativeTarget "AliPayDemo" */;
 			buildPhases = (
+				DDDF58D78D55A57F47B6B720 /* [CP] Check Pods Manifest.lock */,
 				DAB7247C1B4D11AD00E78655 /* Sources */,
 				DAB7247D1B4D11AD00E78655 /* Frameworks */,
 				DAB7247E1B4D11AD00E78655 /* Resources */,
+				6291B9AD6017D712BCDF4604 /* [CP] Embed Pods Frameworks */,
+				69DF75F43E0BE362CEF059AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,21 +281,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6291B9AD6017D712BCDF4604 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DF75F43E0BE362CEF059AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDDF58D78D55A57F47B6B720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliPayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAB7247C1B4D11AD00E78655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB784091B56714000DBB327 /* SetpasswordViewController.m in Sources */,
+				DAB784091B56714000DBB327 /* HTMIGesturePasswordViewController.m in Sources */,
 				DA6CD42D1B4F712B00C0B22E /* AliPayItem.m in Sources */,
 				DAB6A6561B550CA90080C483 /* AlipaySubItem.m in Sources */,
 				DAB7248C1B4D11AD00E78655 /* ViewController.m in Sources */,
 				DAB724891B4D11AD00E78655 /* AppDelegate.m in Sources */,
-				DAB784021B565CB100DBB327 /* KeychainItemWrapper.m in Sources */,
 				DABA83581B4E7A310039A83D /* AliPayViews.m in Sources */,
 				DA576F991B5C96BF0010BD97 /* MBProgressHUD.m in Sources */,
 				DAB724861B4D11AD00E78655 /* main.m in Sources */,
-				DAB784061B565CD700DBB327 /* KeychainData.m in Sources */,
+				DAB784061B565CD700DBB327 /* HTMIKeychainTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +474,7 @@
 		};
 		DAB724A41B4D11AD00E78655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07FDC6201C6BB379F43EC937 /* Pods-AliPayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AliPayDemo/Info.plist;
@@ -409,6 +485,7 @@
 		};
 		DAB724A51B4D11AD00E78655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E13A1FA0FCAC5E621178464 /* Pods-AliPayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AliPayDemo/Info.plist;

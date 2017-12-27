@@ -1,14 +1,14 @@
 //
-//  KeychainData.h
+//  HTMIKeychainTool.h
 //  AliPayDemo
 //
-//  Created by pg on 15/7/15.
-//  Copyright (c) 2015年 pg. All rights reserved.
+//  Created by wlq on 15/7/15.
+//  Copyright (c) 2015年 wlq. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface KeychainData : NSObject
+@interface HTMIKeychainTool : NSObject
 
 /****** 是否是第一次输入 ******/
 + (BOOL)isFirstInput:(NSString *)str;
@@ -28,26 +28,11 @@
 
 
 
-
-
-
-
-
-
-
-
-/****   KeychainData.m  *****/
+/****   HTMIKeychainTool.m  *****/
 /*****************   根据keychain官网的，封装，增，取，删。都只需一句话  *********************/
 + (void)setObject:(id)object forKey:(id)key;
 + (id)objectForKey:(id)key;
 + (void)removeObjectForKey:(id)key;
-
-
-
-
-
-
-
 
 
 @end
