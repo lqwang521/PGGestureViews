@@ -10,6 +10,12 @@
 
 @interface HTMIKeychainTool : NSObject
 
+/****** 获取UUID ******/
++ (NSString *)getUUID;
+
+/****** 设置UUID ******/
++ (void)setUUID:(NSString *)uuid;
+
 /****** 是否是第一次输入 ******/
 + (BOOL)isFirstInput:(NSString *)str;
 

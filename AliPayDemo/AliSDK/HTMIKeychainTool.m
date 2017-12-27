@@ -11,11 +11,21 @@
 #import <SAMKeychain/SAMKeychain.h>
 
 #define KEYCHAIN_KEY  @"password_slider"
-#define HTMI_KEYCHAIN_ACCOUNT  @"htmitech"
+#define HTMI_KEYCHAIN_SERVICE  @"com.htmitech.emportal"
 
 @implementation HTMIKeychainTool
 
-#pragma mark --------------------------
+#pragma mark - UUID
+
++ (NSString *)getUUID {
+    return [self objectForKey:@"uuid"];
+}
+
++ (void)setUUID:(NSString *)uuid {
+    [self setObject:uuid forKey:@"uuid"];
+}
+
+#pragma mark - 手势密码
 
 + (BOOL)isSave
 {
@@ -57,8 +67,6 @@
     return NO;
 }
 
-#pragma mark - Private
-
 + (void)forgotPsw
 {
     [self removeObjectForKey:KEYCHAIN_KEY];
@@ -69,30 +77,33 @@
     [self setObject:str forKey:KEYCHAIN_KEY];
 }
 
+#pragma mark - Private
+
 + (void)setObject:(id)object forKey:(id)key
 {
-    [self setObject:object forKey:key account:HTMI_KEYCHAIN_ACCOUNT];
+    [self setObject:object forKey:key service:HTMI_KEYCHAIN_SERVICE];
 }
 
-+ (void)setObject:(id)object forKey:(id)key account:(NSString *)account
++ (void)setObject:(id)object forKey:(id)key service:(NSString *)service
 {
-    [SAMKeychain setPassword:object forService:key account:account];
+    [SAMKeychain setPassword:object forService:service account:key];
 }
 
 + (NSString *)objectForKey:(id)key
 {
-    return [self objectForKey:key account:HTMI_KEYCHAIN_ACCOUNT];
+    return [self objectForKey:key service:HTMI_KEYCHAIN_SERVICE];
 }
 
-+ (NSString *)objectForKey:(id)key account:(NSString *)account
++ (NSString *)objectForKey:(id)key service:(NSString *)service
 {
-    NSString *stringValue = [SAMKeychain passwordForService:key account:account];
+    NSError * error = nil;
+    NSString *stringValue = [SAMKeychain passwordForService:service account:key];
     return stringValue;
 }
 
 + (void)removeObjectForKey:(id)key
 {
-    [SAMKeychain deletePasswordForService:key account:HTMI_KEYCHAIN_ACCOUNT];
+    [SAMKeychain deletePasswordForService:key account:HTMI_KEYCHAIN_SERVICE];
 }
 
 @end
