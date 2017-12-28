@@ -1,0 +1,112 @@
+/*
+ MXStrings.strings
+ MXClient
+ 
+ Created by zhu zhanping on 13-3-8.
+ Copyright (c) 2013年 Enterprise. All rights reserved.
+ */
+
+"mx_main" = "慧通软服";
+"mx_work_noConnect" = "慧通软服(未连接)";
+
+"mx_system_warning" = "提示";
+"mx_gotoUpdate" = "前往升级";
+"mx_later" = "以后再说";
+"mx_newVersion" = "新版本升级提示";
+"mx_system_sure" = "确定";
+
+//=============================== 主页 =====================================
+"OA_homePage" = "首页";
+//=============================== 待阅 =====================================
+"OA_toReading" = "通讯录";
+//=============================== 通讯录 =====================================
+"mx_addressbook_addressBookTitle" = "通讯录";
+"mx_addressbook_addressbook" = "通讯录";
+
+//=============================== 应用中心 =====================================
+"mx_applicationCenter_newMessageMenuItems" = "发布消息;创建任务;组织活动;发起投票";
+"mx_applicationCenter" = "应用中心";
+"mx_appCentertitle" = "沟通";
+"oa_appManage" = "日程管理";
+//=============================== 待办 =====================================
+"mx_work_todo" = "待办";
+//=============================== My work =====================================
+"mx_work_minxin" = "我的沟通";
+"mx_work_loading" = "收取中...";
+
+"mx_work_peoplechat" = "发起讨论组";
+"mx_work_addfriends" = "添加联系人";
+"mx_work_jobsharing" = "工作分享";
+//wlq add EMI聊天信息
+"mx_work_all_group_user"= "全部群成员";
+"mx_work_group_user"= "群成员";
+"mx_work_add"= "添加";
+"mx_qr_code" = "扫一扫";
+"mx_qr_appCenter" = "应用中心";
+
+
+//=============================== 左侧边栏 =====================================
+//"ht_setting_settingItems" = "消息提醒|密码设置|常用意见|应用中心|我的收藏||风格设置|版本信息";
+"ht_setting_settingItems" = "消息提醒|密码设置|常用意见|应用中心|我的收藏|风格设置|版本信息";
+//"ht_setting_settingImageItems" = "leftbar_warning|leftbar_updatepassword|leftbar_option|leftbar_appcenter|leftbar_theme|leftbar_version";
+"ht_setting_settingImageItems" = "leftbar_warning|leftbar_updatepassword|leftbar_option|leftbar_appcenter|leftbar_collect|leftbar_theme|leftbar_version";
+
+
+//=============================== 设置 =====================================
+"mx_setting_settingItems" = "新消息提醒|来电显示|密码设置|修改密码|版本信息";
+"mx_setting_settingItems_nonDail" = "新消息提醒|密码设置|修改密码|版本信息";
+"mx_setting_changePassword" = "修改密码";
+"mx_setting_changeSuccess" = "修改成功";
+"mx_setting_complete" = "完成";
+"mx_setting_messageAlertSettingto" = "声音|振动";
+"mx_setting_noDisturb"="消息免打扰设置";
+"mx_setting" = "设置";
+"mx_setting_noDisturbSetting" = "全天开启|只在夜间开启|关闭";
+"mx_setting_pleaseEnterTheOldPassword" = "请输入旧密码";
+"mx_setting_pleaseEnterTheNewPassword" = "请输入新密码";
+"mx_setting_pleaseEnterTheConfirmPassword" = "请输入确认密码";
+"mx_setting_pleaseEnterTheNewPasswordAgain" = "请再次输入新密码";
+"mx_setting_enterTheNewPasswordTwiceInconsistent" = "新密码两次输入不一致";
+"mx_setting_enterTheOldPasswordIsNotCorrect" = "旧密码输入不正确";
+"mx_setting_DNDSetting" = "免打扰设置";
+"mx_setting_DNDPrompt" = "开启免打扰后，消息将收不到声音和振动提醒，夜间免打扰时间段22:00 - 08:00";
+"mx_setting_newMessage" = "新消息提醒";
+"mx_setting_settingMessage" = "你可以设置是否需要声音或振动。";
+"mx_setting_settingMessage1" = "设置系统功能消息提示声音和振动的时段。";
+"mx_setting_logOut" = "退出登录";
+"mx_setting_newMessageNotice" = "新消息通知";
+"mx_setting_settingRemind1" = "如果你要关闭或开启";
+"mx_setting_settingRemind2" = "的新消息通知，请在iPhone的“设置”－“通知”功能中，找到应用程序“";
+"mx_setting_settingRemind3" = "”更改。";
+"mx_setting_closed" = "已关闭";
+"mx_setting_opened" = "已开启";
+"mx_setting_noNeddUpgrade" = "已是最新版本，无需更新";
+
+//=============================== 圈 =====================================
+"mx_workGroup_workGroup" = "工作圈";
+
+//=============================== 登录 =====================================
+"mx_login_emailPlaceHolder" = "帐号";
+"mx_login_passwordPlaceHolder" = "密码";
+"mx_login_login" = "登录";
+
+//=============================== 侧拉栏 =====================================
+"mx_network_myInternalNetwork" = "我的内部社区";
+"mx_network_myExternalNetwork" = "我的外部社区";
+"mx_network_browseExternalNetwork" = "浏览外部社区";
+"mx_gesturePassCode" = "手势密码";
+"mx_otherLogin" = "其他帐号登录";
+"mx_setGesture" = "设置手势密码";
+"mx_againGesture" = "请再次输入手势密码";
+"mx_inconsistent" = "与上次绘制不一致，请重新绘制";
+"mx_enterGesture" = "请输入手势密码";
+"mx_reEnter" = "密码不匹配,请重新输入";
+"mx_enterSuccess" = "手势密码输入成功";
+"mx_logInAgain" = "忘记手势密码，需重新登录";
+"mx_forgotgesturePassCode" = "忘记手势密码";
+"mx_resetGesture" = "重新设置手势";
+"mx_gestureCodeSetting" = "开启手势密码|修改手势密码";
+"mx_PassCode" = "手势密码";
+"mx_reEnter" = "密码不匹配,请重新输入";
+"mx_cancel" = "取消";
+"mx_default_error" = "服务不可用，请稍后重试";

@@ -9,10 +9,10 @@ use_frameworks!
 def main
     
     pod 'SAMKeychain'
-  
+    pod 'Masonry'
 end
 
-target 'AliPayDemo' do
+target 'HTMIGesturePasswordDemo' do
     main
 
 end

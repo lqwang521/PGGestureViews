@@ -7,219 +7,371 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0465F2AA3C580BF12E4ECB475E1AEA54 /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B193CCC992ED8DC9204C02D785AAB72 /* Pods-AliPayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		156C4A85B22254DC4ABAEDE972489485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
-		315BFDF38ED1D90AA710806CA3BDDC5B /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */; };
-		3919BC13200534A6DDD241931D30B1BD /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */; };
-		521FDA755FF723FCA1A04EBACE3C5C90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
-		59F3A66176AA9F27E287CFB43BA44C4B /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73B5DFD47398B801B6F646B6BD316DC2 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		ADC262974A375023809D133390564397 /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4DA979AFE7A692C19D1E37E8E58A807 /* Pods-AliPayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */; };
-		E8670A4691960ED76D8BFCE2CA4C7D44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
-		EE8BC97F82A5297245CA03BA51413298 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0192F6C257532571397302894FD4992A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF1D4DC4FD91C9C1E6F254D8980FA3 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0413208A707F6770F23A42B3001E9B5E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7741ED0B6CD4E060C5B7975FDE5FB84 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		047BD48DE66931394A7C768E56F4228F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7124D926456D4F209F327DC79FF7F32 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0494BE09D6514AD6870AF0C1CD84C39F /* Pods-HTMIGesturePasswordDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A0987AD487BADA420689CA838C7E03 /* Pods-HTMIGesturePasswordDemo-dummy.m */; };
+		04A7D6AADAB213CE7D26F8EAD2F87536 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6FE85AFE05ED7D2E22F455B5A23DC1 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		068EF598E554EC57038ACFB89CC2C47A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 57735F7D8E3EF2F11DF0B7F5494CE42D /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06AC7884D3A65A6A4A56AFBFD443D2BF /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C16832728823DCA47292D1B276F9AE /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E7AB0D2ED1298096845D7DE9212ED1 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FDB2B4F75591851F0F119EAE70B3F63 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4650C6A9426623E77132DBD489DCDD31 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2854C9B1086758BD2B6681206B6759B4 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C179458BEF0B6C57B681644A3FFF63D /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E06CE583CF00D3050D8A1961E269CE2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7E998F125F718A2E2AC230FDF3DA6 /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38E0CD63021889EE46E1A6B9FA0415F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3636F129765572B2CBC215D2134D2A4D /* UIKit.framework */; };
+		3A0A99CC92EBF922540A3A8DCEC1DFAC /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF145BA0D316AF92083785B3C4734AD3 /* SAMKeychain-dummy.m */; };
+		432FA22864D148EBD4CB22F55AB68004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056564C1949A20D137D64535BB7FA175 /* Foundation.framework */; };
+		457ACF9150DCF9AF445B129CC9678FB6 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BDA16F357EBAFCE5A58C04E5F68ECA /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4659B2125519FE5977DEDA6076CEBCC9 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F09574A04D0EE4747DC05C7EDA9D8A60 /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		46B8AC4930BCE0DC170252FFBB686E45 /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13B72538EA095386EEEDCCD7CC7A3F /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4F2050654580FE1F1D5F4F82CEDDB8 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3515F699C2BD0FAFC97906066DAF4C2C /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50E66015002B618F1CCE8B50105B3D00 /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1779757CFC52B49EDE348BA3F4C2117A /* SAMKeychain.bundle */; };
+		565F4D222244DEDD7B531B82E76D104E /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2740A06BE0AC80F0B2BAE094D3F6F3 /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60635349E1797676CCA1165045198BD1 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799773587A26FD83262E8B24EF9AAE /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		636BBA734C1A17A734761D674FAE8800 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 54351C5563957E3C455A99AD597813A7 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		649E34726A0055261518A642C86BCBEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056564C1949A20D137D64535BB7FA175 /* Foundation.framework */; };
+		716475937A9612FB91D9E82059FFD6E6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D850989A058CD205F0D19CE2FC14D2C /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		78760302595AC1AC5BC8374A7495D525 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB17123A587327A8885A689E8D610CC3 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7C17BEA6034027310D1D205DB2008CA5 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD8366760FF8228CBA227D75230CCC2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81397274B40799F88BC90EB6DB7FC47D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA604EBD134C9174AAF56A85D9332FFC /* Security.framework */; };
+		816AA6C651AE9E9E3CEF5B3ED45C9C11 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A97CD46EF30043DCE9BF51F940785 /* Masonry-dummy.m */; };
+		88DE7BAB1F4999A5F4B617F44E5FD1D3 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7A917D07BD03095DEB8C1EE9299577 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CD45B754192DE834B642975E85257AB /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9FCE15105294F2AFB7C2DE3E4C0C62 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		922619D64A08CE64CFF011504711039A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056564C1949A20D137D64535BB7FA175 /* Foundation.framework */; };
+		B44383A3FA435C1E986942C817339302 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EAA300AE8D409DD49C1EC45E40AD46 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF223BA41A8A34375BE00A98F7BA648E /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BF9B0F33244D9E02DF4FEB78406327 /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0A16E00B4BC2D88A7833D5DAED62942 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA4FC8647886FBC8E9F194C7EED77A4 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8DF22EAFFC2F81B0426E2165AC93E44 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8951799E07E777551B9D178A01BAAE9C /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA2EF8C5B7D2DF2757D6ADDFBB3C97A7 /* Pods-HTMIGesturePasswordDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB2EFD076EC1D4BF1746F4056F58530 /* Pods-HTMIGesturePasswordDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8F9B4A1AC4E276EA8AA4C6F2BF3CD4 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A535DA4898FE1ABDE5F84092634E03 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B1525CB3DFCBD8E5032680530413D9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BDF73D8599195015F39CAE52076796C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA888CABD6B2305C25A210B94AC52B45 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 338CFA3FE6D859A019FCF00915C8E88D /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F8C1F02B411DE2E28BF503327560AC65 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F987000AD7F975E51F352F915F0AF /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD046C34DDBE04D348A9821C8700DFA4 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1BACECD00BA5FC12C0653729720BD1 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA64EC5A3EB6C84ADD63E4341DE0A3B5 /* PBXContainerItemProxy */ = {
+		B4E6B994D7C235E151F359462611EFB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 310FEBA9077FBBFBBD63418F19CBD989;
+			remoteGlobalIDString = D52144DE9D7255DE912490FF5A806573;
+			remoteInfo = Masonry;
+		};
+		C27DAB2CC27A459BD3D17D9D34C7D6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39FE6843A279E3A7942AF65DD82566C5;
 			remoteInfo = SAMKeychain;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
-		1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychain.h; path = Sources/SAMKeychain.h; sourceTree = "<group>"; };
-		2243E044C5482C15ED57A35A13993C24 /* Pods-AliPayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AliPayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A23B83748BF7D5372B1A63CBF08A1A8 /* Pods-AliPayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AliPayDemo-frameworks.sh"; sourceTree = "<group>"; };
-		40A95F3AF0221457E7930C850D80912D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychainQuery.m; path = Sources/SAMKeychainQuery.m; sourceTree = "<group>"; };
-		4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
-		4D7B92B1DA5F8CD40DC3DA704F3B6A8E /* SAMKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-prefix.pch"; sourceTree = "<group>"; };
-		4FB5D001C2A6D6C4618B23F73EEEB562 /* Pods-AliPayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AliPayDemo.modulemap"; sourceTree = "<group>"; };
-		5A6DB8E2A50D787E625E8C36CAAA5CFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BBBEAAFE15AF367A9C92BD3FFBE0B34 /* Pods-AliPayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AliPayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain.framework; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AliPayDemo-dummy.m"; sourceTree = "<group>"; };
+		056564C1949A20D137D64535BB7FA175 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		12A535DA4898FE1ABDE5F84092634E03 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		1779757CFC52B49EDE348BA3F4C2117A /* SAMKeychain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SAMKeychain.bundle; path = Support/SAMKeychain.bundle; sourceTree = "<group>"; };
+		1AD8366760FF8228CBA227D75230CCC2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		1E79EEE49F9C9AD4E8D053507C0F096F /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		1E7A917D07BD03095DEB8C1EE9299577 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		22B0ED081186D85C3E0A4927356A7847 /* Pods-HTMIGesturePasswordDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTMIGesturePasswordDemo.release.xcconfig"; sourceTree = "<group>"; };
+		25EAA300AE8D409DD49C1EC45E40AD46 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		272E699D803BD7BD5F0D8C281D0C2FE7 /* Pods-HTMIGesturePasswordDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTMIGesturePasswordDemo-resources.sh"; sourceTree = "<group>"; };
+		2F4397F02A2278158DCEFF14FD85F8B6 /* SAMKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.xcconfig; sourceTree = "<group>"; };
+		338CFA3FE6D859A019FCF00915C8E88D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		34799773587A26FD83262E8B24EF9AAE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		3515F699C2BD0FAFC97906066DAF4C2C /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		35E7AB0D2ED1298096845D7DE9212ED1 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		3636F129765572B2CBC215D2134D2A4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		380B537C43728ED1D0CA83341D115620 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3A97CD46EF30043DCE9BF51F940785 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		3D850989A058CD205F0D19CE2FC14D2C /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		3F6FE85AFE05ED7D2E22F455B5A23DC1 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		44D11EF6FBC3B95D804C07D250853F0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4650C6A9426623E77132DBD489DCDD31 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		484BAC7C3851D31999200ED474AF2B4F /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4875DCAA22CE649467895B647C918D1A /* Pods-HTMIGesturePasswordDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTMIGesturePasswordDemo-frameworks.sh"; sourceTree = "<group>"; };
+		54351C5563957E3C455A99AD597813A7 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		55BACEBBE4CC59358E455BD6C8382E63 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		55BDA16F357EBAFCE5A58C04E5F68ECA /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		57735F7D8E3EF2F11DF0B7F5494CE42D /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		5987843F1DC21890BBDBEB8ABE458B00 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Masonry.modulemap; sourceTree = "<group>"; };
+		5C179458BEF0B6C57B681644A3FFF63D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6BDF73D8599195015F39CAE52076796C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6C711C9D6726350A4C81428368C89670 /* Pods-HTMIGesturePasswordDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTMIGesturePasswordDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		73C16832728823DCA47292D1B276F9AE /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		802F987000AD7F975E51F352F915F0AF /* SAMKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychainQuery.m; path = Sources/SAMKeychainQuery.m; sourceTree = "<group>"; };
+		8951799E07E777551B9D178A01BAAE9C /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		8A2740A06BE0AC80F0B2BAE094D3F6F3 /* SAMKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A11AB5BFF40CE909B60B8904D930D133 /* SAMKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SAMKeychain.modulemap; sourceTree = "<group>"; };
-		A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychain.m; path = Sources/SAMKeychain.m; sourceTree = "<group>"; };
-		B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-umbrella.h"; sourceTree = "<group>"; };
-		BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.xcconfig; sourceTree = "<group>"; };
-		BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AliPayDemo-umbrella.h"; sourceTree = "<group>"; };
-		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		D347A985CF006AFADADC148B650A803B /* Pods-AliPayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AliPayDemo-resources.sh"; sourceTree = "<group>"; };
-		D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SAMKeychain.bundle; path = Support/SAMKeychain.bundle; sourceTree = "<group>"; };
-		E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AliPayDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AliPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AliPayDemo.framework; path = "Pods-AliPayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A0987AD487BADA420689CA838C7E03 /* Pods-HTMIGesturePasswordDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTMIGesturePasswordDemo-dummy.m"; sourceTree = "<group>"; };
+		A2BF9B0F33244D9E02DF4FEB78406327 /* SAMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychain.h; path = Sources/SAMKeychain.h; sourceTree = "<group>"; };
+		A7124D926456D4F209F327DC79FF7F32 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		AFEFA2A6A4E22581A852F93078AED165 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A66ADC5575DF1DA199976C554207CE /* Pods-HTMIGesturePasswordDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HTMIGesturePasswordDemo.modulemap"; sourceTree = "<group>"; };
+		BCE7E998F125F718A2E2AC230FDF3DA6 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		BF13B72538EA095386EEEDCCD7CC7A3F /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
+		CD9FCE15105294F2AFB7C2DE3E4C0C62 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		DB17123A587327A8885A689E8D610CC3 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		E2E493ABF3475FF4D78EE95C601A84CA /* SAMKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SAMKeychain.modulemap; sourceTree = "<group>"; };
+		E644A460F059F03B63924D2BA6F9B75C /* Pods-HTMIGesturePasswordDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTMIGesturePasswordDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E7741ED0B6CD4E060C5B7975FDE5FB84 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E9869FE397899E8B70E66923469085FE /* SAMKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-prefix.pch"; sourceTree = "<group>"; };
+		EEA4FC8647886FBC8E9F194C7EED77A4 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		F09574A04D0EE4747DC05C7EDA9D8A60 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		F7B26593D52BD42CEC495D14A7D43DA8 /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain.framework; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA604EBD134C9174AAF56A85D9332FFC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		FAB2EFD076EC1D4BF1746F4056F58530 /* Pods-HTMIGesturePasswordDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTMIGesturePasswordDemo-umbrella.h"; sourceTree = "<group>"; };
+		FCCF1D4DC4FD91C9C1E6F254D8980FA3 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		FD9E00C3A689FEC19A910BAB81D83E47 /* Pods_HTMIGesturePasswordDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HTMIGesturePasswordDemo.framework; path = "Pods-HTMIGesturePasswordDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1BACECD00BA5FC12C0653729720BD1 /* SAMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychain.m; path = Sources/SAMKeychain.m; sourceTree = "<group>"; };
+		FF145BA0D316AF92083785B3C4734AD3 /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
+		FFFA3D040E4478A267F74DD58192D848 /* Pods-HTMIGesturePasswordDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTMIGesturePasswordDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4F57FBCCD68B6444B34C8BC0E3F4901 /* Frameworks */ = {
+		2B8B34FB7B96570C0AADE4C00BDCEF3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521FDA755FF723FCA1A04EBACE3C5C90 /* Foundation.framework in Frameworks */,
+				649E34726A0055261518A642C86BCBEB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6EA28C16C36B4870969F69F2C77E7E5 /* Frameworks */ = {
+		CF6771A42DC872F55ACF2133A344C856 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				156C4A85B22254DC4ABAEDE972489485 /* Foundation.framework in Frameworks */,
-				E8670A4691960ED76D8BFCE2CA4C7D44 /* Security.framework in Frameworks */,
+				922619D64A08CE64CFF011504711039A /* Foundation.framework in Frameworks */,
+				81397274B40799F88BC90EB6DB7FC47D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EC657AC5A7BEE9A3D288B582F4C5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432FA22864D148EBD4CB22F55AB68004 /* Foundation.framework in Frameworks */,
+				38E0CD63021889EE46E1A6B9FA0415F5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FEE6DBAC6779899A1B713A4C015471C /* Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40A95F3AF0221457E7930C850D80912D /* Info.plist */,
-				A11AB5BFF40CE909B60B8904D930D133 /* SAMKeychain.modulemap */,
-				BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */,
-				12C016559F945AF5A21CCA169F3752F0 /* SAMKeychain-dummy.m */,
-				4D7B92B1DA5F8CD40DC3DA704F3B6A8E /* SAMKeychain-prefix.pch */,
-				B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SAMKeychain";
-			sourceTree = "<group>";
-		};
-		3404228A30E1AF44212A2DB3C9EDEA1A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */,
-				7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3C3D5CE1AF552E68D74B490FEA85FD6E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBBDFF63AAB94E5B24D9D082A267D941 /* Pods-AliPayDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+				8159BDBF1C781806931ACDCC4CA48024 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+		21E4F3B5E4B739F90299FCAA10C94BD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
-				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+				484BAC7C3851D31999200ED474AF2B4F /* Masonry.framework */,
+				FD9E00C3A689FEC19A910BAB81D83E47 /* Pods_HTMIGesturePasswordDemo.framework */,
+				F7B26593D52BD42CEC495D14A7D43DA8 /* SAMKeychain.framework */,
 			);
-			name = iOS;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD9F93E92A9DF935893B61A63C48D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97DDD6C6A29DB2B1F31D1D58FEDEB5E3 /* Masonry */,
+				4A705F30313DEFBAAF814658EB21384D /* SAMKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A705F30313DEFBAAF814658EB21384D /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				A2BF9B0F33244D9E02DF4FEB78406327 /* SAMKeychain.h */,
+				FE1BACECD00BA5FC12C0653729720BD1 /* SAMKeychain.m */,
+				BF13B72538EA095386EEEDCCD7CC7A3F /* SAMKeychainQuery.h */,
+				802F987000AD7F975E51F352F915F0AF /* SAMKeychainQuery.m */,
+				8401CCC0754C3557C2C78E918DEF571F /* Resources */,
+				51CD96B4E2382F2269CFFF0584D658FD /* Support Files */,
+			);
+			name = SAMKeychain;
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+		51CD96B4E2382F2269CFFF0584D658FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFEFA2A6A4E22581A852F93078AED165 /* Info.plist */,
+				E2E493ABF3475FF4D78EE95C601A84CA /* SAMKeychain.modulemap */,
+				2F4397F02A2278158DCEFF14FD85F8B6 /* SAMKeychain.xcconfig */,
+				FF145BA0D316AF92083785B3C4734AD3 /* SAMKeychain-dummy.m */,
+				E9869FE397899E8B70E66923469085FE /* SAMKeychain-prefix.pch */,
+				8A2740A06BE0AC80F0B2BAE094D3F6F3 /* SAMKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAMKeychain";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				BF4BDEF7DEC1C21CD808737A4ACDE8FB /* Pods */,
-				3404228A30E1AF44212A2DB3C9EDEA1A /* Products */,
-				3C3D5CE1AF552E68D74B490FEA85FD6E /* Targets Support Files */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				2CD9F93E92A9DF935893B61A63C48D3B /* Pods */,
+				21E4F3B5E4B739F90299FCAA10C94BD8 /* Products */,
+				C0D7607678620DFB72B2BE73E42A452A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BF4BDEF7DEC1C21CD808737A4ACDE8FB /* Pods */ = {
+		8159BDBF1C781806931ACDCC4CA48024 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F96D79477F61AD45B0303034737A3AB4 /* SAMKeychain */,
+				056564C1949A20D137D64535BB7FA175 /* Foundation.framework */,
+				FA604EBD134C9174AAF56A85D9332FFC /* Security.framework */,
+				3636F129765572B2CBC215D2134D2A4D /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		C193794E7F23D7B6C851A0A37A62B25D /* Resources */ = {
+		8401CCC0754C3557C2C78E918DEF571F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D413D76727073737DAA57CA60C778547 /* SAMKeychain.bundle */,
+				1779757CFC52B49EDE348BA3F4C2117A /* SAMKeychain.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		CBBDFF63AAB94E5B24D9D082A267D941 /* Pods-AliPayDemo */ = {
+		97DDD6C6A29DB2B1F31D1D58FEDEB5E3 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				5A6DB8E2A50D787E625E8C36CAAA5CFF /* Info.plist */,
-				4FB5D001C2A6D6C4618B23F73EEEB562 /* Pods-AliPayDemo.modulemap */,
-				6BBBEAAFE15AF367A9C92BD3FFBE0B34 /* Pods-AliPayDemo-acknowledgements.markdown */,
-				2243E044C5482C15ED57A35A13993C24 /* Pods-AliPayDemo-acknowledgements.plist */,
-				8D6CDBE34B23EFBB5539212D37AFDE12 /* Pods-AliPayDemo-dummy.m */,
-				3A23B83748BF7D5372B1A63CBF08A1A8 /* Pods-AliPayDemo-frameworks.sh */,
-				D347A985CF006AFADADC148B650A803B /* Pods-AliPayDemo-resources.sh */,
-				BEFF245F657DE10D7F1E390B9806140B /* Pods-AliPayDemo-umbrella.h */,
-				E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */,
-				E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */,
+				CD9FCE15105294F2AFB7C2DE3E4C0C62 /* MASCompositeConstraint.h */,
+				338CFA3FE6D859A019FCF00915C8E88D /* MASCompositeConstraint.m */,
+				8951799E07E777551B9D178A01BAAE9C /* MASConstraint.h */,
+				3D850989A058CD205F0D19CE2FC14D2C /* MASConstraint.m */,
+				3515F699C2BD0FAFC97906066DAF4C2C /* MASConstraint+Private.h */,
+				1E7A917D07BD03095DEB8C1EE9299577 /* MASConstraintMaker.h */,
+				F09574A04D0EE4747DC05C7EDA9D8A60 /* MASConstraintMaker.m */,
+				1AD8366760FF8228CBA227D75230CCC2 /* MASLayoutConstraint.h */,
+				73C16832728823DCA47292D1B276F9AE /* MASLayoutConstraint.m */,
+				12A535DA4898FE1ABDE5F84092634E03 /* Masonry.h */,
+				3F6FE85AFE05ED7D2E22F455B5A23DC1 /* MASUtilities.h */,
+				54351C5563957E3C455A99AD597813A7 /* MASViewAttribute.h */,
+				FCCF1D4DC4FD91C9C1E6F254D8980FA3 /* MASViewAttribute.m */,
+				35E7AB0D2ED1298096845D7DE9212ED1 /* MASViewConstraint.h */,
+				34799773587A26FD83262E8B24EF9AAE /* MASViewConstraint.m */,
+				EEA4FC8647886FBC8E9F194C7EED77A4 /* NSArray+MASAdditions.h */,
+				A7124D926456D4F209F327DC79FF7F32 /* NSArray+MASAdditions.m */,
+				6BDF73D8599195015F39CAE52076796C /* NSArray+MASShorthandAdditions.h */,
+				4650C6A9426623E77132DBD489DCDD31 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				BCE7E998F125F718A2E2AC230FDF3DA6 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				57735F7D8E3EF2F11DF0B7F5494CE42D /* View+MASAdditions.h */,
+				DB17123A587327A8885A689E8D610CC3 /* View+MASAdditions.m */,
+				25EAA300AE8D409DD49C1EC45E40AD46 /* View+MASShorthandAdditions.h */,
+				5C179458BEF0B6C57B681644A3FFF63D /* ViewController+MASAdditions.h */,
+				E7741ED0B6CD4E060C5B7975FDE5FB84 /* ViewController+MASAdditions.m */,
+				AC397F5100D149409D3F93CA565DA384 /* Support Files */,
 			);
-			name = "Pods-AliPayDemo";
-			path = "Target Support Files/Pods-AliPayDemo";
+			name = Masonry;
+			path = Masonry;
 			sourceTree = "<group>";
 		};
-		F96D79477F61AD45B0303034737A3AB4 /* SAMKeychain */ = {
+		AC397F5100D149409D3F93CA565DA384 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F034B27064FF8E4018C72896F1D15CE /* SAMKeychain.h */,
-				A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */,
-				4750DDEBB30FCFB4FA63C2BC37A4214D /* SAMKeychainQuery.h */,
-				467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */,
-				C193794E7F23D7B6C851A0A37A62B25D /* Resources */,
-				1FEE6DBAC6779899A1B713A4C015471C /* Support Files */,
+				380B537C43728ED1D0CA83341D115620 /* Info.plist */,
+				5987843F1DC21890BBDBEB8ABE458B00 /* Masonry.modulemap */,
+				55BACEBBE4CC59358E455BD6C8382E63 /* Masonry.xcconfig */,
+				3A3A97CD46EF30043DCE9BF51F940785 /* Masonry-dummy.m */,
+				1E79EEE49F9C9AD4E8D053507C0F096F /* Masonry-prefix.pch */,
+				55BDA16F357EBAFCE5A58C04E5F68ECA /* Masonry-umbrella.h */,
 			);
-			name = SAMKeychain;
-			path = SAMKeychain;
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		C0D7607678620DFB72B2BE73E42A452A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF98056F50DD6106F6638BB750980080 /* Pods-HTMIGesturePasswordDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF98056F50DD6106F6638BB750980080 /* Pods-HTMIGesturePasswordDemo */ = {
+			isa = PBXGroup;
+			children = (
+				44D11EF6FBC3B95D804C07D250853F0C /* Info.plist */,
+				B0A66ADC5575DF1DA199976C554207CE /* Pods-HTMIGesturePasswordDemo.modulemap */,
+				E644A460F059F03B63924D2BA6F9B75C /* Pods-HTMIGesturePasswordDemo-acknowledgements.markdown */,
+				FFFA3D040E4478A267F74DD58192D848 /* Pods-HTMIGesturePasswordDemo-acknowledgements.plist */,
+				98A0987AD487BADA420689CA838C7E03 /* Pods-HTMIGesturePasswordDemo-dummy.m */,
+				4875DCAA22CE649467895B647C918D1A /* Pods-HTMIGesturePasswordDemo-frameworks.sh */,
+				272E699D803BD7BD5F0D8C281D0C2FE7 /* Pods-HTMIGesturePasswordDemo-resources.sh */,
+				FAB2EFD076EC1D4BF1746F4056F58530 /* Pods-HTMIGesturePasswordDemo-umbrella.h */,
+				6C711C9D6726350A4C81428368C89670 /* Pods-HTMIGesturePasswordDemo.debug.xcconfig */,
+				22B0ED081186D85C3E0A4927356A7847 /* Pods-HTMIGesturePasswordDemo.release.xcconfig */,
+			);
+			name = "Pods-HTMIGesturePasswordDemo";
+			path = "Target Support Files/Pods-HTMIGesturePasswordDemo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1744B4D07926CA3724C31CDEE42A9273 /* Headers */ = {
+		30035C897569525C2A790F63C67F2D73 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B193CCC992ED8DC9204C02D785AAB72 /* Pods-AliPayDemo-umbrella.h in Headers */,
+				565F4D222244DEDD7B531B82E76D104E /* SAMKeychain-umbrella.h in Headers */,
+				BF223BA41A8A34375BE00A98F7BA648E /* SAMKeychain.h in Headers */,
+				46B8AC4930BCE0DC170252FFBB686E45 /* SAMKeychainQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		336B8119FC1531894C45364DDE426E22 /* Headers */ = {
+		F3E9930C736C01D12F5733EFD1F0A948 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0465F2AA3C580BF12E4ECB475E1AEA54 /* SAMKeychain-umbrella.h in Headers */,
-				ADC262974A375023809D133390564397 /* SAMKeychain.h in Headers */,
-				59F3A66176AA9F27E287CFB43BA44C4B /* SAMKeychainQuery.h in Headers */,
+				8CD45B754192DE834B642975E85257AB /* MASCompositeConstraint.h in Headers */,
+				4D4F2050654580FE1F1D5F4F82CEDDB8 /* MASConstraint+Private.h in Headers */,
+				C8DF22EAFFC2F81B0426E2165AC93E44 /* MASConstraint.h in Headers */,
+				88DE7BAB1F4999A5F4B617F44E5FD1D3 /* MASConstraintMaker.h in Headers */,
+				7C17BEA6034027310D1D205DB2008CA5 /* MASLayoutConstraint.h in Headers */,
+				457ACF9150DCF9AF445B129CC9678FB6 /* Masonry-umbrella.h in Headers */,
+				CC8F9B4A1AC4E276EA8AA4C6F2BF3CD4 /* Masonry.h in Headers */,
+				04A7D6AADAB213CE7D26F8EAD2F87536 /* MASUtilities.h in Headers */,
+				636BBA734C1A17A734761D674FAE8800 /* MASViewAttribute.h in Headers */,
+				091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */,
+				C0A16E00B4BC2D88A7833D5DAED62942 /* NSArray+MASAdditions.h in Headers */,
+				D8B1525CB3DFCBD8E5032680530413D9 /* NSArray+MASShorthandAdditions.h in Headers */,
+				0FDB2B4F75591851F0F119EAE70B3F63 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				068EF598E554EC57038ACFB89CC2C47A /* View+MASAdditions.h in Headers */,
+				B44383A3FA435C1E986942C817339302 /* View+MASShorthandAdditions.h in Headers */,
+				2854C9B1086758BD2B6681206B6759B4 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC236C56E39020652CB9EB59050622C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2EF8C5B7D2DF2757D6ADDFBB3C97A7 /* Pods-HTMIGesturePasswordDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */ = {
+		39FE6843A279E3A7942AF65DD82566C5 /* SAMKeychain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C78A2A919B892B2E28A609DC3D63FDAD /* Build configuration list for PBXNativeTarget "SAMKeychain" */;
+			buildConfigurationList = D9C62C47363FCCCC9C578A45B08FD199 /* Build configuration list for PBXNativeTarget "SAMKeychain" */;
 			buildPhases = (
-				2B3233D300191957C5A4C1A0A95278E5 /* Sources */,
-				F6EA28C16C36B4870969F69F2C77E7E5 /* Frameworks */,
-				336B8119FC1531894C45364DDE426E22 /* Headers */,
-				BC32A482E0DF9D58DF8699BD996F96A3 /* Resources */,
+				4DACAAE20B5D3A5FB79DB471AC3C4D90 /* Sources */,
+				CF6771A42DC872F55ACF2133A344C856 /* Frameworks */,
+				30035C897569525C2A790F63C67F2D73 /* Headers */,
+				30D6000FB35F8C8D7E29ABD68BF60F4F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -227,25 +379,43 @@
 			);
 			name = SAMKeychain;
 			productName = SAMKeychain;
-			productReference = 7018821A1DA8FDC95CB25F7C50BF813F /* SAMKeychain.framework */;
+			productReference = F7B26593D52BD42CEC495D14A7D43DA8 /* SAMKeychain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B22DC9DF531E72D607FD64BD4B182F83 /* Pods-AliPayDemo */ = {
+		D52144DE9D7255DE912490FF5A806573 /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94C9E37F93C6E46D67564B0FB2F54601 /* Build configuration list for PBXNativeTarget "Pods-AliPayDemo" */;
+			buildConfigurationList = 02D024184BD368B565F3B6257DF3C605 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				3112C3CC440CDA92E28444D9F0DAAAC0 /* Sources */,
-				D4F57FBCCD68B6444B34C8BC0E3F4901 /* Frameworks */,
-				1744B4D07926CA3724C31CDEE42A9273 /* Headers */,
+				F81D11D65E53E335DDBA6206E2E20270 /* Sources */,
+				F6EC657AC5A7BEE9A3D288B582F4C5E9 /* Frameworks */,
+				F3E9930C736C01D12F5733EFD1F0A948 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F24B5DC461668BAE73333436C131CE7B /* PBXTargetDependency */,
 			);
-			name = "Pods-AliPayDemo";
-			productName = "Pods-AliPayDemo";
-			productReference = E7AC684F780E9011F6B72CD70E396AB8 /* Pods_AliPayDemo.framework */;
+			name = Masonry;
+			productName = Masonry;
+			productReference = 484BAC7C3851D31999200ED474AF2B4F /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF3F67E461DB82FEF85033D181A7E59D /* Pods-HTMIGesturePasswordDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8443F03BE1F46EA52309E6A9AACE6BAA /* Build configuration list for PBXNativeTarget "Pods-HTMIGesturePasswordDemo" */;
+			buildPhases = (
+				CE9BDC7B6CCCB098B35A137CFCEE7E05 /* Sources */,
+				2B8B34FB7B96570C0AADE4C00BDCEF3B /* Frameworks */,
+				FBC236C56E39020652CB9EB59050622C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1DFC6D98978961BE6380A0321EC29B /* PBXTargetDependency */,
+				B92AD970738A595EE70F600FADCB314C /* PBXTargetDependency */,
+			);
+			name = "Pods-HTMIGesturePasswordDemo";
+			productName = "Pods-HTMIGesturePasswordDemo";
+			productReference = FD9E00C3A689FEC19A910BAB81D83E47 /* Pods_HTMIGesturePasswordDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,61 +435,207 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3404228A30E1AF44212A2DB3C9EDEA1A /* Products */;
+			productRefGroup = 21E4F3B5E4B739F90299FCAA10C94BD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B22DC9DF531E72D607FD64BD4B182F83 /* Pods-AliPayDemo */,
-				310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */,
+				D52144DE9D7255DE912490FF5A806573 /* Masonry */,
+				DF3F67E461DB82FEF85033D181A7E59D /* Pods-HTMIGesturePasswordDemo */,
+				39FE6843A279E3A7942AF65DD82566C5 /* SAMKeychain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC32A482E0DF9D58DF8699BD996F96A3 /* Resources */ = {
+		30D6000FB35F8C8D7E29ABD68BF60F4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3919BC13200534A6DDD241931D30B1BD /* SAMKeychain.bundle in Resources */,
+				50E66015002B618F1CCE8B50105B3D00 /* SAMKeychain.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B3233D300191957C5A4C1A0A95278E5 /* Sources */ = {
+		4DACAAE20B5D3A5FB79DB471AC3C4D90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315BFDF38ED1D90AA710806CA3BDDC5B /* SAMKeychain-dummy.m in Sources */,
-				EE8BC97F82A5297245CA03BA51413298 /* SAMKeychain.m in Sources */,
-				73B5DFD47398B801B6F646B6BD316DC2 /* SAMKeychainQuery.m in Sources */,
+				3A0A99CC92EBF922540A3A8DCEC1DFAC /* SAMKeychain-dummy.m in Sources */,
+				FD046C34DDBE04D348A9821C8700DFA4 /* SAMKeychain.m in Sources */,
+				F8C1F02B411DE2E28BF503327560AC65 /* SAMKeychainQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3112C3CC440CDA92E28444D9F0DAAAC0 /* Sources */ = {
+		CE9BDC7B6CCCB098B35A137CFCEE7E05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4DA979AFE7A692C19D1E37E8E58A807 /* Pods-AliPayDemo-dummy.m in Sources */,
+				0494BE09D6514AD6870AF0C1CD84C39F /* Pods-HTMIGesturePasswordDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81D11D65E53E335DDBA6206E2E20270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA888CABD6B2305C25A210B94AC52B45 /* MASCompositeConstraint.m in Sources */,
+				716475937A9612FB91D9E82059FFD6E6 /* MASConstraint.m in Sources */,
+				4659B2125519FE5977DEDA6076CEBCC9 /* MASConstraintMaker.m in Sources */,
+				06AC7884D3A65A6A4A56AFBFD443D2BF /* MASLayoutConstraint.m in Sources */,
+				816AA6C651AE9E9E3CEF5B3ED45C9C11 /* Masonry-dummy.m in Sources */,
+				0192F6C257532571397302894FD4992A /* MASViewAttribute.m in Sources */,
+				60635349E1797676CCA1165045198BD1 /* MASViewConstraint.m in Sources */,
+				047BD48DE66931394A7C768E56F4228F /* NSArray+MASAdditions.m in Sources */,
+				2E06CE583CF00D3050D8A1961E269CE2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				78760302595AC1AC5BC8374A7495D525 /* View+MASAdditions.m in Sources */,
+				0413208A707F6770F23A42B3001E9B5E /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F24B5DC461668BAE73333436C131CE7B /* PBXTargetDependency */ = {
+		6F1DFC6D98978961BE6380A0321EC29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = D52144DE9D7255DE912490FF5A806573 /* Masonry */;
+			targetProxy = B4E6B994D7C235E151F359462611EFB1 /* PBXContainerItemProxy */;
+		};
+		B92AD970738A595EE70F600FADCB314C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SAMKeychain;
-			target = 310FEBA9077FBBFBBD63418F19CBD989 /* SAMKeychain */;
-			targetProxy = EA64EC5A3EB6C84ADD63E4341DE0A3B5 /* PBXContainerItemProxy */;
+			target = 39FE6843A279E3A7942AF65DD82566C5 /* SAMKeychain */;
+			targetProxy = C27DAB2CC27A459BD3D17D9D34C7D6AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		15ECF07790784A86B552F262DEB27FC2 /* Release */ = {
+		0E856C659AD8E4C09B9EC5557F7D727B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */;
+			baseConfigurationReference = 55BACEBBE4CC59358E455BD6C8382E63 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F2B05BDAA1F32F9845FBF35781F57DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BACEBBE4CC59358E455BD6C8382E63 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F4354F47D615FA10EA87674AC8C79DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4397F02A2278158DCEFF14FD85F8B6 /* SAMKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A088712F2C380BA14C0A2EE15F582919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B0ED081186D85C3E0A4927356A7847 /* Pods-HTMIGesturePasswordDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HTMIGesturePasswordDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HTMIGesturePasswordDemo/Pods-HTMIGesturePasswordDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HTMIGesturePasswordDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A80B3152E9CF8D888BF23FC96F8352E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4397F02A2278158DCEFF14FD85F8B6 /* SAMKeychain.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -346,100 +662,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		490195040970178F8A4F5D7923BCEFB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E009A5BDBDC6851C1112545CD0BE4974 /* Pods-AliPayDemo.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AliPayDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AliPayDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5F8B140C67E302BE7C1191D2E02716A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E541374899B3F963C3440AA5A85ED0C6 /* Pods-AliPayDemo.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AliPayDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AliPayDemo/Pods-AliPayDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AliPayDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A44D09AF097C2F603B36C6FBA56A426C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA3712DAC9525B3F033C0759BFB8AE86 /* SAMKeychain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
-				PRODUCT_NAME = SAMKeychain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -556,9 +778,50 @@
 			};
 			name = Debug;
 		};
+		EAADE2226E3B2AAB0145032F68733619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C711C9D6726350A4C81428368C89670 /* Pods-HTMIGesturePasswordDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HTMIGesturePasswordDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HTMIGesturePasswordDemo/Pods-HTMIGesturePasswordDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HTMIGesturePasswordDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02D024184BD368B565F3B6257DF3C605 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2B05BDAA1F32F9845FBF35781F57DB /* Debug */,
+				0E856C659AD8E4C09B9EC5557F7D727B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -568,20 +831,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94C9E37F93C6E46D67564B0FB2F54601 /* Build configuration list for PBXNativeTarget "Pods-AliPayDemo" */ = {
+		8443F03BE1F46EA52309E6A9AACE6BAA /* Build configuration list for PBXNativeTarget "Pods-HTMIGesturePasswordDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F8B140C67E302BE7C1191D2E02716A0 /* Debug */,
-				490195040970178F8A4F5D7923BCEFB3 /* Release */,
+				EAADE2226E3B2AAB0145032F68733619 /* Debug */,
+				A088712F2C380BA14C0A2EE15F582919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C78A2A919B892B2E28A609DC3D63FDAD /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
+		D9C62C47363FCCCC9C578A45B08FD199 /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A44D09AF097C2F603B36C6FBA56A426C /* Debug */,
-				15ECF07790784A86B552F262DEB27FC2 /* Release */,
+				2F4354F47D615FA10EA87674AC8C79DB /* Debug */,
+				A80B3152E9CF8D888BF23FC96F8352E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

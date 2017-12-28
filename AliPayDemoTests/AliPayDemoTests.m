@@ -1,6 +1,6 @@
 //
-//  AliPayDemoTests.m
-//  AliPayDemoTests
+//  HTMIGesturePasswordDemoTests.m
+//  HTMIGesturePasswordDemoTests
 //
 //  Created by wlq on 15/7/8.
 //  Copyright (c) 2015年 wlq. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface AliPayDemoTests : XCTestCase
+@interface HTMIGesturePasswordDemoTests : XCTestCase
 
 @end
 
-@implementation AliPayDemoTests
+@implementation HTMIGesturePasswordDemoTests
 
 - (void)setUp {
     [super setUp];
